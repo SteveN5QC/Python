@@ -1,0 +1,2 @@
+user_name = input("What is your name?")  # Takes whatever is typed in response to the prompt and stores it in the variable user_name
+print("Hello, "+ user_name + "!") # The + operator concatenates the Hello string, the user_name variable content, and the ! string
