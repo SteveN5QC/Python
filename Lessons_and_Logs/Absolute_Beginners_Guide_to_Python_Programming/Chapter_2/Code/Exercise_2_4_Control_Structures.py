@@ -1,0 +1,17 @@
+# Exercise_2_4_Control_Structures
+
+startnum = input("Please enter a number")
+
+working_num = float(startnum)
+
+# If the number is positive say so. if working_num .gt. 0 print "Your number is positive."
+if working_num > 0:
+    print("Your number is positive.")
+
+# Else if the number is zero say so.  if working_num .eq. 0 print "Your number is zero."
+elif working_num == 0:
+    print("Your number is zero.")
+
+# Else (the only remaining option) say the number is negative.  print "Your number is negative."
+else:
+    print("Your number is negative.")
