@@ -14,3 +14,13 @@ print("The digit", var_i, "is an integer!")
 
 print("This is printing a boolean:", var_b)
 
+"""
+Exercise 1:  Basic Variable Assignment 
+Description: 
+In this exercise, you will practice assigning values to variables of different data types and printing them. This will help you understand how to work with integers, floats, strings, and booleans in Python. 
+
+Task: 
+Assign values to variables of different data types (integer, float, string, boolean) and print them. 
+
+
+"""

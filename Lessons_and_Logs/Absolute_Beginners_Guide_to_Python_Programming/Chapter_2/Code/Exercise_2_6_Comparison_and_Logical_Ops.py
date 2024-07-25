@@ -48,3 +48,13 @@ else:
     else:
         print("This person is a senior.")
 
+
+"""
+
+Exercise 6: Comparison and Logical Operators 
+Description: 
+Explore Python’s comparison and logical operators by creating a script that categorizes a user’s age. This exercise will enhance your understanding of how to compare values and combine conditions. 
+Task: 
+Create a script that asks the user for their age and determines if they are a child, teenager, adult, or senior, using both comparison and logical operators. 
+
+"""

@@ -42,3 +42,14 @@ print(f"{first_number:.2f} divided by {second_number:.2f} is {division:.2f}.")
 power = first_number ** second_number
 
 print(f"{first_number:.2f} raised to {second_number:.2f} power is {power:.2f}.")
+
+
+"""
+
+Exercise 5: Arithmetic Operations 
+Description: 
+Get hands-on with Python’s arithmetic operators by performing various calculations. This exercise will help you understand how to use operators like addition, subtraction, multiplication, division, and exponentiation. 
+Task: 
+Write a script that performs and prints the results of addition, subtraction, multiplication, division, and exponentiation of two numbers provided by the user. 
+
+"""

@@ -19,3 +19,13 @@ else:
 
 # Print odd or even
 print(f"Your number is {'even.' if even == True else 'odd.'}")
+
+"""
+
+Exercise 7: Ternary Conditional Expression 
+Description: 
+Learn to use ternary conditional expressions for concise decision-making in your code. This exercise involves writing a script that uses a ternary expression to determine whether a user’s input number is even or odd. 
+Task: 
+Write a script that determines whether a user’s input number is even or odd using a ternary conditional expression. 
+
+"""
