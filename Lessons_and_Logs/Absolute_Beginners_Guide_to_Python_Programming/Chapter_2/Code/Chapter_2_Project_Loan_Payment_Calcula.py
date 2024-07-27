@@ -22,7 +22,7 @@ loan_duration = input("Please enter the Loan Duration (Years):  ")
 # Ask the user if they want to include a down payment. 
 
 is_down_payment = input("Is there a down payment (yes or no):  ")
-if is_down_payment == yes:
+if is_down_payment == "yes":
     logical_down_payment = True
 
 else:
@@ -41,7 +41,8 @@ if logical_down_payment == True:
 
 
 # else use entered loan amount
-else net_loan = float(total_loan)
+else: 
+    net_loan = float(total_loan)
 
 
 
@@ -73,11 +74,24 @@ else net_loan = float(total_loan)
 # numerator = loan_amount * monthly_interest_rate
 # denominator = 1 - (1 + monthly_interest_rate) ** -total_payments
 # monthly_payment = numerator / denominator  
+# 
+# NOTE:  During testing it looks like the interest rates in the equation need to be
+#        decimal fractions (df) not raw percentages. 
 
-num_of_payments = (float(loan_duration) * 12)
 years_duration = float(loan_duration)
-numerator = net_loan * (float(annual_interest_rate) / 12)
-denominator = 1 - (1 + (float(annual_interest_rate))) ** num_of_payments
+
+num_of_payments = years_duration * 12
+
+annual_interest_floating = float(annual_interest_rate)
+
+# Calculate the Decimal Fraction interest rate (df)
+
+df_monthly_interest_rate = (annual_interest_floating / 12) / 100
+
+numerator = net_loan * df_monthly_interest_rate
+
+denominator = 1 - (1 + df_monthly_interest_rate) ** (0 - num_of_payments)
+
 monthly_payment = numerator / denominator 
  
 # Output Detailed Loan Information:  
@@ -90,11 +104,13 @@ print(f"The net loan amount is {net_loan:.2f}.")
 print(f"The total number of payments is {num_of_payments:.2f} over {years_duration:.2f} years.")
 
 
-#  ================= Here Next =====================================
+# Present the interest rate to the user.  
 
-#     Present the interest rate to the user.  Finally, display the calculated monthly payment, formatted to two decimal places.  
+print(f"The annual interest rate is {annual_interest_rate}%")
 
+# Finally, display the calculated monthly payment, formatted to two decimal places.  
 
+print(f"The monthly payment {monthly_payment:.2f}.")
   
 
 """
