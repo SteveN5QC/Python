@@ -8,10 +8,18 @@ third_row = ["G", "H", "I"]
 
 matrix = [first_row, second_row, third_row]
 
-# row 0 1 2 -- for each 0 1 2
 
-          
-print(third_row[1])
+
+# Iterate over each row -- printing row number and contents
+
+for row_number, row in enumerate(matrix):
+    print(f"Row {row_number + 1} contains:")
+    
+    # Iterate over row contents
+    for element in row:
+        print(f" {element}")
+
+print()  # Print a new line for readibility
 
 
 
