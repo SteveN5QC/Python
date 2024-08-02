@@ -1,5 +1,20 @@
 # Exercise_3_2_2D Array Access 
 
+# Task: Create a 3x3 matrix and print each element using nested loops.
+
+first_row = ["A", "B", "C"]
+second_row = ["D", "E", "F"]
+third_row = ["G", "H", "I"]
+
+matrix = [first_row, second_row, third_row]
+
+# row 0 1 2 -- for each 0 1 2
+
+          
+print(third_row[1])
+
+
+
 """
 
 Steve’s Working Draft Workflow:  
