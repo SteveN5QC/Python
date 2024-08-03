@@ -1,6 +1,25 @@
 # Exercise_3_3_Dictionary_Operations
 
-# Chapter 3 Exercise 3 NEXT
+# Create a dictionary with information about a book (title, author, year). (Done and Verified)
+ 
+
+a_book = {"name": "Just So Precious", "author": "M. L. Buchman", "year": "2024"}
+
+# print(a_book["name"])
+
+# print(a_book["author"])
+
+# print(a_book["year"])
+
+print(a_book)
+
+# Add a key for genre, update the year, and print all the keys and values.
+
+a_book["genre"] = "Military Romance"
+
+a_book["year"] = "2023"
+
+print(a_book)
 
 
 """
