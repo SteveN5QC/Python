@@ -4,4 +4,4 @@ Steve's Python Learning
 
 ## Main
 
-This is the Main Branch where evertthing starts out and ends back in.
+This is the Main Branch where everything starts out and ends back in.
