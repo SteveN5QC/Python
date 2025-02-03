@@ -1,5 +1,76 @@
 # Chapter_3_Project_Build_a_Python_Quiz_Game
 
+# python Chapter_3_Project_Build_a_Python_Quiz_Game.py
+
+
+# Setup Instructions Define Questions and Answers:  
+# Create a list of dictionaries, where each dictionary represents a quiz question, its multiple-choice options, and the correct answer.
+
+# Initialize correct answer counter "num_correct" to zero
+
+num_correct = int(0)
+
+# create a sample question dictionary to test things 
+
+question_1 = {"question": "Who was buried in Andrew Jackson's grave?", "option_1": "Donald Trump",
+              "option_2": "Andrew Jackson", "option_3": "John Tyler", "option_4": "Joe Biden", "correct_answer": "Andrew Jackson"}
+
+
+#  1/6: What data type is used to store items as a sequence that can maintain order?  1. List  2. Tuple  3. Set  4. Dictionary  Your answer (1-4): 1  Correct! You earned a point.
+
+
+# Print the sample question and multiple choice optional answers
+print(question_1["question"], "   ",
+    question_1["option_1"], "  ", 
+    question_1["option_2"], "  ", 
+    question_1["option_3"], "  ", 
+    question_1["option_4"])
+
+# Loop through options to find the enumerate the correct answer
+ 
+for loop_index in range(1, 5):
+    if question_1[loop_index] == question_1["correct_answer"]:
+        right_answer = loop_index
+
+# Compare the enumerated answer the answer I chose
+
+#  To Do Get the answer I chose
+
+# If I was correct increment the count of correct answer and say so
+
+if int(myanswer) == int(right_answer):
+    num_correct = num_correct + 1
+    print("You are correct!")
+
+# Otherwise, I was incorrect no incrementing of the count of correct answer and say I was wrong
+
+else:
+    print("That answer is wrong.")
+
+
+
+
+"""
+  
+Question 2: What color was George Washington’s great white horse? 
+Options:  Black  Brown  White  Green  Correct Answer: White  
+Question 3: What data type is used to store items as a sequence that can maintain order? 
+Options:  List  Tuple  Set  Dictionary
+Correct Answer: List  
+Question 4: To loop over each character in a word, which Python structure should you use? 
+Options:  For loop  While loop  If statement  Print Statement  
+Correct Answer: For loop  
+Question 5: Which Python collection allows us to store unique items identified by a key?
+Options:  List  Tuple  Set  Dictionary
+Correct Answer: Dictionary  
+Question 6: Which Python collection type prevents duplicates? 
+Options:  List  Tuple  Set  Dictionary
+Correct Answer: Set
+
+"""
+
+
+
 """
 
 Steve’s Working Draft Workflow:  
@@ -12,21 +83,28 @@ Steve’s Working Draft Workflow:
 
 3.15 Project: Build a Python Quiz Game 
  
-This next project is a Quiz Game, further solidifying your understanding of collections and loops by applying these concepts in a fun, interactive way. This project tests your knowledge and encourages creative problem-solving and coding practice. 
+This next project is a Quiz Game, further solidifying your understanding of collections and loops by applying these concepts in a fun, 
+interactive way. 
+This project tests your knowledge and encourages creative problem-solving and coding practice. 
  
 Objective: 
-Create an interactive quiz game that tests the player's knowledge across various topics. The game should present a series of questions, each with multiple-choice answers, and track the player's score throughout the session.” 
+Create an interactive quiz game that tests the player's knowledge across various topics. 
+The game should present a series of questions, each with multiple-choice answers, and track the player's score throughout the session.” 
  
 Setup Instructions Define Questions and Answers:  
 Create a list of dictionaries, where each dictionary represents a quiz question, its multiple-choice options, and the correct answer. 
  
-Since the focus of the project isn’t to test your creativity, I will provide you with some questions below. Use them, or don’t use them. Either works.  
+Since the focus of the project isn’t to test your creativity, I will provide you with some questions below. 
+Use them, or don’t use them. 
+Either works.  
  
 Gameplay Flow:  
 Display a welcome message to the user.  Loop through the questions. 
  
 Optionally: 
-You could randomly shuffle the questions to ensure a unique gameplay experience each time. To do so, you would need to import Python’s random package and then shuffle the questions. We haven’t talked about importing Python packages, so here is the code to do it:  
+You could randomly shuffle the questions to ensure a unique gameplay experience each time. 
+To do so, you would need to import Python’s random package and then shuffle the questions. 
+We haven’t talked about importing Python packages, so here is the code to do it:  
  
 # Shuffle the questions
 import random
